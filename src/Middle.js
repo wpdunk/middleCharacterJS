@@ -1,13 +1,13 @@
-function Middle() {
-  Middle.prototype.isEven = function(string) {
+class Middle {
+  isEven(string) {
     if (string.length % 2 === 0) {
       return true;
     } else {
       return false;
     }
-  };
+  }
 
-  Middle.prototype.midChar = function(string) {
+  midChar(string) {
     if (this.isEven(string) === false) {
       return string.charAt(string.length / 2);
     } else {
@@ -15,5 +15,5 @@ function Middle() {
         string.charAt(string.length / 2 - 1) + string.charAt(string.length / 2)
       );
     }
-  };
+  }
 }
